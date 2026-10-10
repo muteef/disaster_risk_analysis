@@ -1,0 +1,89 @@
+{
+  "flood": {
+    "disaster": "Flood Risk Assessment",
+    "model_type": "Random Forest Ensemble (Balanced)",
+    "test_samples": 930,
+    "accuracy": 99.78,
+    "precision": 96.77,
+    "recall": 96.77,
+    "f1_score": 96.77,
+    "roc_auc": 0.9999,
+    "confusion_matrix": [
+      [
+        898,
+        1
+      ],
+      [
+        1,
+        30
+      ]
+    ],
+    "feature_importances": {
+      "rainfall_24h": 37.72,
+      "rainfall_7d": 34.2,
+      "soil_moisture": 14.29,
+      "humidity": 9.22,
+      "is_monsoon": 4.0,
+      "elevation": 0.48,
+      "rainfall_anomaly": 0.1
+    },
+    "validation_strategy": "Stratified 75-25 Train/Test Split with Class Balancing"
+  },
+  "drought": {
+    "disaster": "Drought Risk Assessment",
+    "model_type": "Random Forest Ensemble (Balanced)",
+    "test_samples": 930,
+    "accuracy": 97.85,
+    "precision": 63.04,
+    "recall": 90.62,
+    "f1_score": 74.36,
+    "roc_auc": 0.9937,
+    "confusion_matrix": [
+      [
+        881,
+        17
+      ],
+      [
+        3,
+        29
+      ]
+    ],
+    "feature_importances": {
+      "consecutive_dry_days": 73.85,
+      "soil_moisture": 10.23,
+      "is_monsoon": 5.49,
+      "temperature": 5.23,
+      "rainfall_7d": 2.86,
+      "elevation": 2.35
+    },
+    "validation_strategy": "Stratified 75-25 Train/Test Split with Class Balancing"
+  },
+  "landslide": {
+    "disaster": "Landslide Risk Assessment",
+    "model_type": "Random Forest Ensemble (Balanced)",
+    "test_samples": 930,
+    "accuracy": 99.78,
+    "precision": 90.91,
+    "recall": 90.91,
+    "f1_score": 90.91,
+    "roc_auc": 0.9998,
+    "confusion_matrix": [
+      [
+        918,
+        1
+      ],
+      [
+        1,
+        10
+      ]
+    ],
+    "feature_importances": {
+      "rainfall_7d": 43.72,
+      "rainfall_24h": 29.47,
+      "slope": 18.23,
+      "soil_moisture": 7.6,
+      "elevation": 0.98
+    },
+    "validation_strategy": "Stratified 75-25 Train/Test Split with Class Balancing"
+  }
+}
